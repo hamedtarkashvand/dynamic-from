@@ -4,7 +4,7 @@ import Input from './input'
 import Radio from './radio'
 import Password from './password'
 
-const Elements = ({data: {name, title, type , option}}) => {
+const Elements = ({data: {name, title, type}}) => {
     switch (type) {
         case 'text':
             return (<Input
@@ -15,11 +15,13 @@ const Elements = ({data: {name, title, type , option}}) => {
             return (<Radio
                 nameField={name}
                 titleField={title}
-                optionField={}
-
             />);
         case 'pass' :
-            return (<Password/>);
+            return (<Password
+
+                nameField={name}
+                titleField={title}
+            />);
 
         default:
             return null

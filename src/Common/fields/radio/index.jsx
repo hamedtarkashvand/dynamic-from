@@ -1,29 +1,28 @@
 import React from 'react';
 import './input.scss'
+import {Field} from "formik";
 
 const Radio = ({nameField, titleField, optionField}) => {
     return (
         <>
-            <label>{titleField} </label>
+            <label className="form-label">{titleField}</label>
             <div>
                 <div className="form-check">
-                    <input value="woman" className="form-check-input" type="radio" name={nameField}
+                    <Field value="woman" className="form-check-input" type="radio" name={nameField}
                            id="flexRadioDefault1"/>
                     <label className="form-check-label" htmlFor="flexRadioDefault1">
                        مونث
                     </label>
                 </div>
                 <div className="form-check">
-                    <input value="men" className="form-check-input" type="radio" name={nameField}
-                           id="flexRadioDefault2"
-                           checked/>
+                    <Field value="men" className="form-check-input" type="radio" name={nameField}
+                           id="flexRadioDefault2"/>
                     <label className="form-check-label" htmlFor="flexRadioDefault2">
                         مذکر
                     </label>
                 </div>
             </div>
         </>
-
     )
 };
 

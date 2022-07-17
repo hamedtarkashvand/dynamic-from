@@ -1,10 +1,14 @@
 import React from 'react';
 import './input.scss'
+import {Field} from "formik";
 
-const Password = ({placeHolder, value, onChange}) => {
+const Password = ({nameField, titleField}) => {
     return (
-        <input className="form-control form-control-lg" type="password" placeholder="password"
-               aria-label=".form-control-lg example"/>
+        <div>
+            <label className="form-label">{titleField}</label>
+            <Field className="form-control form-control-lg" name={nameField} type="password" placeholder={titleField} aria-label=".form-control-lg example"/>
+        </div>
+
     )
 };
 export default Password
