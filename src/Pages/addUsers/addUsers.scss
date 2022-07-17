@@ -1,0 +1,68 @@
+@import '../../Global/Style';
+
+.addUsers-page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    
+   .header {
+        padding: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        background: linear-gradient(90deg, rgb(1 137 30 / 72%) 0%, rgb(132 255 170) 100%);
+        max-height: 230px;
+        @include respond(mobileM) {
+            max-height: 200px;
+         }
+         
+        .wrapper-progressbar {
+            margin-bottom: 40px;
+            .progressbar{
+                width: 100px;
+                @include respond(mobileM) {
+                    width: 86px;
+                 }
+            }
+            @include respond(mobileM) {
+                margin-bottom: 15px;
+                
+             }
+             
+        }
+        .wrapper-question {
+            width: 100%;
+            margin-bottom: 30px;
+            @include respond(mobileM) {
+                margin-bottom: 10px;
+                
+             }
+             
+        }
+   }
+
+   .wrapper-options {
+       width: 100%;
+       .list-items {
+           padding: 20px;
+           @include respond(mobileM) {
+            padding:0 20px;
+         }
+           .list {
+               list-style-type: none;
+               padding: 0;
+               .item {
+                   margin: 16px 0;
+               }
+           }
+           
+           
+       }
+   
+   }
+
+}
+
+

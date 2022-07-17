@@ -1,0 +1,25 @@
+$white: #fdfdfe;
+$green15C:#15c872;
+$green3DF:#3dfc5c;
+$redFF8:#ff8989;
+$grayEEE:#eeeeee;
+$textColor8080:#808080;
+$textColor6161:#616161;
+
+
+@mixin respond ($breakpoint) {
+
+    @if $breakpoint==mobileL {
+
+       
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobileM {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../Global/Style';
+
+.input {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    color:  #6b6b6b;
+    border:1px solid white;
+    transition: all 0.9;
+    &::placeholder {
+        color:  #b9b9b9;
+        font-size: 15px;
+    }
+    &:focus {
+        outline: none;
+        background-color: #f3f3f3;
+    }
+}

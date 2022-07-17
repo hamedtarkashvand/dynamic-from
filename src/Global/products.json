@@ -1,0 +1,20 @@
+[
+  {
+    "form": "product",
+    "path": "addproduct",
+    "titleform": "اضافه کردن محصول",
+    "field": [
+      {
+        "name": "productname",
+        "title": "نام محصول",
+        "type": "text"
+      },
+      {
+        "name": "count",
+        "title": "تعداد",
+        "type": "text"
+      }
+    ],
+    "createurl": "test.com/api/product/testadd"
+  }
+]

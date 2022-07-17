@@ -1,0 +1,42 @@
+@import '../../Global/Style';
+.item-list {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 24px;
+    color:  $textColor6161;
+    border:0;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 9%);
+    transition: all 0.5s;
+    &.correct {
+        background-color: $green3DF;
+        box-shadow: 0px 0px 28px -2px $green3DF;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    &.selected:not(.correct) {
+        background-color: $redFF8;
+        box-shadow: 0px 0px 28px -2px $redFF8;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:disabled{
+        cursor: default;
+        pointer-events: unset!important;
+    }
+
+    @include respond(mobileM) {
+        font-size: 20px;
+        
+     }
+}

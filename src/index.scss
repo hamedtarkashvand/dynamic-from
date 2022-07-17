@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import './Global/Style';
+body,* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Passion One', cursive;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+.containerApp {
+  flex: 1;
+  margin: auto;
+  max-width:480px;
+}
+/* 360×640 */

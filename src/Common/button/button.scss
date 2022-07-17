@@ -1,0 +1,32 @@
+@import '../../Global/Style';
+.button {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    color:  $textColor6161;
+    border:0;
+    cursor: pointer;
+    &.sucess {
+        background-color: $green15C;
+        color:$white
+    }
+    &:hover {
+        background-color: darken($color: $green15C, $amount: 3);
+    }
+    &:disabled{
+        opacity: 0.8;
+        cursor: default;
+        pointer-events: unset!important;
+        
+        &:hover {
+            background-color: $green15C;
+        }
+    }
+    // &::placeholder {
+    //     color:  #b9b9b9;
+    //     font-size: 15px;
+    // }
+}
