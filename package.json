@@ -38,6 +38,9 @@
       "react-app/jest"
     ]
   },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
