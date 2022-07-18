@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-grid.rtl.css';
-import './index.scss';
 import RoutesApp from './routes';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux/store';
 import {Provider} from 'react-redux';
 import { ToastContainer } from 'react-toastify';
+
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-grid.rtl.css';
+import './index.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
  const root = ReactDOM.createRoot(document.getElementById('root'))
  root.render(
