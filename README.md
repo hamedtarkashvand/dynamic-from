@@ -10,13 +10,14 @@
 # Screen Shots
  Form Product  |  Form user
 :-------------------------:|:-------------------------:
-![product](https://user-images.githubusercontent.com/47851402/179487373-5c7bbb2b-ebaf-4a4d-9b63-e85d28a0ddcb.png) | ![user](https://user-images.githubusercontent.com/47851402/179488038-6402964e-dce3-4793-9560-0df27693a792.png)
+![product](https://user-images.githubusercontent.com/47851402/179487373-5c7bbb2b-ebaf-4a4d-9b63-e85d28a0ddcb.png) | ![user](https://user-images.githubusercontent.com/47851402/179489497-6243d821-7077-48aa-974b-2913d0a815dd.png)
 # Installation
 - Clone the project
 - Go to root folder
 - In terminal => yarn
 - yarn install
 - yarn start
+
 
 
 
