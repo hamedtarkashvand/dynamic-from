@@ -8,8 +8,8 @@
 - No crashes and No memory leaks
 - The app run on both All platform.
 # Screen Shots
- Form Product  |  Score Page
-:-------------------------:|:-------------------------:|:-------------------------:
+ Form Product  |  Form user
+:-------------------------:|:-------------------------:
 ![product](https://user-images.githubusercontent.com/47851402/179487373-5c7bbb2b-ebaf-4a4d-9b63-e85d28a0ddcb.png) | ![user](https://user-images.githubusercontent.com/47851402/179488038-6402964e-dce3-4793-9560-0df27693a792.png)
 # Installation
 - Clone the project
