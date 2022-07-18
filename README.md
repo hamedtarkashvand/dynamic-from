@@ -8,15 +8,17 @@
 - No crashes and No memory leaks
 - The app run on both All platform.
 # Screen Shots
-Welcome Page           |  Game Page  |  Score Page
+ Form Product  |  Score Page
 :-------------------------:|:-------------------------:|:-------------------------:
-![firstpage](https://user-images.githubusercontent.com/47851402/161432468-c1342887-b0b1-4bd0-a0dd-424ee10bcfb0.jpg)  | ![qustions](https://user-images.githubusercontent.com/47851402/161432501-1381022b-28dc-4149-9c11-82fccf9b78a7.jpg) | ![end](https://user-images.githubusercontent.com/47851402/161432529-c790da8c-896b-466b-a9a6-096f5fc6e675.jpg)
+![product](https://user-images.githubusercontent.com/47851402/179487373-5c7bbb2b-ebaf-4a4d-9b63-e85d28a0ddcb.png) | ![user](https://user-images.githubusercontent.com/47851402/179488038-6402964e-dce3-4793-9560-0df27693a792.png)
 # Installation
 - Clone the project
 - Go to root folder
 - In terminal => yarn
 - yarn install
 - yarn start
+
+
 
 
 
