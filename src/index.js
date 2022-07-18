@@ -7,14 +7,17 @@ import RoutesApp from './routes';
 import reportWebVitals from './reportWebVitals';
 import store from './Redux/store';
 import {Provider} from 'react-redux';
-import {Header} from './Component'
-
+import { ToastContainer } from 'react-toastify';
 
  const root = ReactDOM.createRoot(document.getElementById('root'))
  root.render(
     <div className="bg-light ">
       <Provider store={store}>
         <RoutesApp/>
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+        />
       </Provider>
     </div>
 );

@@ -4,7 +4,6 @@ import DataItemFields from '../../Global/users.json'
 import {Button, Elements} from '../../Common'
 import './addUsers.scss';
 import {useCreateUser} from '../../Hooks';
-import {useSelector} from 'react-redux'
 
 const AddUsers = () => {
     const [fieldsForm, setFieldsForm] = useState(null)
@@ -15,9 +14,8 @@ const AddUsers = () => {
     }, []);
 
     const submitForm = (value) => {
-
         fetch(value)
-    }
+    };
 
     return (
         <div className="addUsers-page">

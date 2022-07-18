@@ -1,34 +1,25 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 
-import {Button, Input} from '../../Common'
-import './login.scss'
+import {Button} from '../../Common'
+import './index.scss'
 
 const Index = () => {
     let history = useNavigate();
-    // const dispatch = useDispatch();
-    // const [name , setName] = useState('')
-
-    // const onChangeUserName = (event) =>{
-    //   setName(event)
-    //   dispatch(setUserName(event))
-    // }
 
     return (
         <div className="login-page">
-            {/* <Input onChange={(e)=>onChangeUserName(e.target.value)} placeHolder='your name'/> */}
+            <div className='col-4'>
+                <Button
+                    label='ایجاد کاربر جدید'
+                    type='success'
+                    onClick={() => history('/addUsers')}/>
 
-            <Button
-                lable='add user'
-                type='sucess'
-                // disabled={!(!!name)}
-                onClick={(e) => history('/addUsers')}/>
-
-            <Button
-                lable='add address'
-                type='success'
-                // disabled={!(!!name)}
-                onClick={(e) => history('/questions')}/>
+                <Button
+                    label='ایجاد محصول جدید'
+                    type='success'
+                    onClick={() => history('/questions')}/>
+            </div>
         </div>
     )
 }
