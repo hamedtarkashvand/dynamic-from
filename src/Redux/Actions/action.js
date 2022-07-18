@@ -1,39 +1,37 @@
 export const actionType = {
-    SET_USER_NAME:'SET_USER_NAME',
-    SET_QUESTIONS:'SET_QUESTIONS',
-    CHENG_INDEX:'CHANG_INDEX',
-    CHENG_LOADING:'CHANG_LOADING',
-    CHENG_CORRECT_ANSWER:'CHENG_CORRECT_ANSWER',
-    SET_CURRENT_QUESTION:'SET_CURRENT_QUESTION'
-}
+    CREATE_USERS_LIST:'CREATE_USERS_LIST',
+    FAILED_USERS_LIST:'FAILED_USERS_LIST',
 
-export const setQuestions = (question) => ({
-    type: actionType.SET_QUESTIONS,
-    payload: question,
+    CREATE_PRODUCT_LIST:'CREATE_PRODUCT_LIST',
+    FAILED_PRODUCT_LIST:'FAILED_PRODUCT_LIST',
+
+};
+
+ const createUser = (dataUser) => ({
+    type: actionType.CREATE_USERS_LIST,
+    payload: dataUser,
   });
   
-export const updateIndex = (index) => {
-    return {
-       type: actionType.CHENG_INDEX,
-       payload: index,
-    }
-};
-export const setUserName = (userName) => ({
-    type: actionType.SET_USER_NAME,
-    payload: userName,
+ const failedUser = (dataUser) => ({
+    type: actionType.FAILED_USERS_LIST,
+    payload: dataUser,
   });
 
-export const changLoading = (loading) => ({
-    type: actionType.CHENG_LOADING,
-    payload: loading,
+
+ const createProduct = (dataProduct) => ({
+    type: actionType.CREATE_PRODUCT_LIST,
+    payload: dataProduct,
   });
 
-export const changCorrectAnswer = (countCorrect) => ({
-    type: actionType.CHENG_CORRECT_ANSWER,
-    payload:countCorrect
+const failedProduct = (dataProduct) => ({
+    type: actionType.FAILED_PRODUCT_LIST,
+    payload: dataProduct,
   });
 
-export const setCurrentQuestion = (question) => ({
-    type: actionType.SET_CURRENT_QUESTION,
-    payload:question
-  });
+export {
+    createUser,
+    failedUser,
+    createProduct,
+    failedProduct
+}
+

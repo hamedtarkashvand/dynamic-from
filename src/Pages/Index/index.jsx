@@ -26,7 +26,7 @@ const Index = () => {
 
             <Button
                 lable='add address'
-                type='sucess'
+                type='success'
                 // disabled={!(!!name)}
                 onClick={(e) => history('/questions')}/>
         </div>

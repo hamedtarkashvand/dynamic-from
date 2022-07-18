@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
-import QuizReducer from './QuizReducer'
+import userReducer from './UserReducer'
+import productReducer from './ProductReducer'
 
  const rootReducer = combineReducers({
-    quiz:QuizReducer
-})
+    user:userReducer,
+    product:productReducer,
+});
 
 export default rootReducer

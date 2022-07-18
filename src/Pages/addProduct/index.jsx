@@ -1,35 +1,32 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Formik} from 'formik';
-import DataItemFields from '../../Global/users.json'
+import DataItemFields from '../../Global/products'
 import {Button, Elements} from '../../Common'
-import './addUsers.scss';
-import {useCreateUser} from '../../Hooks';
-import {useSelector} from 'react-redux'
+import {useCreateProduct} from '../../Hooks';
+import './AddProduct.scss';
 
-const AddUsers = () => {
+
+const AddProduct = () => {
     const [fieldsForm, setFieldsForm] = useState(null)
-    const  [fetch, {isLoading}] = useCreateUser();
+    const [fetch, {isLoading}] = useCreateProduct();
 
     useEffect(() => {
         setFieldsForm(DataItemFields[0])
     }, []);
 
     const submitForm = (value) => {
-
         fetch(value)
     }
 
     return (
-        <div className="addUsers-page">
-            <main className='p-5 container'>
-                <h3 className='text-center'> { fieldsForm?.titleform } </h3>
+        <div className="addProduct-page">
+            <main className='p-5 container '>
+                <h3 className='text-center mb-3'> {fieldsForm?.titleform} </h3>
                 <div className='col-5 m-auto bg-body rounded shadow-sm p-5'>
                     <Formik
                         initialValues={{
-                            fullname: '',
-                            password: '',
-                            gender: 'women'
-
+                            productname: undefined,
+                            count: undefined,
                         }}
                         onSubmit={(values => submitForm(values))}>
                         {props => (
@@ -42,11 +39,10 @@ const AddUsers = () => {
                                     })
                                 }
                                 <hr className="my-4"/>
-
                                 <Button
                                     label='ذخیره'
                                     type='success'
-                                    disabled={isLoading} />
+                                    disabled={isLoading}/>
                             </form>)
 
                         }
@@ -55,7 +51,7 @@ const AddUsers = () => {
             </main>
 
         </div>
-)
+    )
 };
 
-export default AddUsers
+export default AddProduct

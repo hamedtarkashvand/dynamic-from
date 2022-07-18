@@ -8,16 +8,11 @@ const Header = () => {
                     <div className="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink
-                                    className="nav-link" to={'activte'}>Activate</NavLink>
+                                <NavLink className="nav-link" to={'addUsers'}>ایجاد کاربر جدید</NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={'addUsers'}>Add User</NavLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to={'product'}>Add Products</NavLink>
+                                <NavLink className="nav-link" to={'product'}>ایجاد محصول جدید</NavLink>
                             </li>
 
                         </ul>

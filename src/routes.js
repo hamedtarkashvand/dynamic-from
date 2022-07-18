@@ -7,7 +7,8 @@ import {
 
 import Index from './Pages/Index';
 import AddUsers from './Pages/addUsers';
-import EndGame from './Pages/endGame';
+import AddProduct from './Pages/addProduct';
+
 import {Header} from "./Component/Header";
 
   const RoutesApp = () =>{
@@ -17,10 +18,14 @@ import {Header} from "./Component/Header";
         <Routes>
             <Route  path="/" element={<Index />}/>
             <Route  path="addUsers" element={<AddUsers />}  />
-            <Route  path="product" element={<EndGame />}  />
+            <Route  path="product" element={<AddProduct />}  />
         </Routes>
      </Router>
     )
   }
+
+
+
+
 
   export default RoutesApp

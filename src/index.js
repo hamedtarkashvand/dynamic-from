@@ -13,7 +13,6 @@ import {Header} from './Component'
  const root = ReactDOM.createRoot(document.getElementById('root'))
  root.render(
     <div className="bg-light ">
-
       <Provider store={store}>
         <RoutesApp/>
       </Provider>
