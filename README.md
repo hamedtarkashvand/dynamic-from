@@ -1,6 +1,4 @@
-# Quiz App 
-- React  Quiz App game , with AI
-- I named this game awful cause you can't ever win the AI inside it :)
+# DYNAMIC FORM
 
 # Features
 - Created by JavaSripte
